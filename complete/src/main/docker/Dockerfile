@@ -1,4 +1,4 @@
-FROM java:8u111-jre
+FROM openjdk:8u111-jre-alpine
 VOLUME /tmp
 ADD gs-spring-boot-docker-0.1.0.jar app.jar
 RUN sh -c 'touch /app.jar'
